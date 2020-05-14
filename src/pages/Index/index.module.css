@@ -1,0 +1,6 @@
+@import '../../common/theme.css';
+
+.container {
+  background: red;
+  color: blue;
+}

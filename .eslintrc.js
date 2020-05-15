@@ -25,5 +25,6 @@ module.exports = {
   plugins: ['react', '@typescript-eslint'],
   rules: {
     'linebreak-style': 0,
+    'import/prefer-default-export': 0,
   },
 };

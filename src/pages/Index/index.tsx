@@ -11,9 +11,9 @@ export const HomePage = () => {
   }, []);
 
   return (
-    <div className={css.container}>
-      Hello there {JSON.stringify(todo)}
-    </div>
+    <main className={css.container}>
+      <div>Welcome {JSON.stringify(todo)}</div>
+    </main>
   );
 };
 

@@ -7,5 +7,6 @@
     // "*.css": "postcss",
     // "*.sass": "sass"
   },
-  "eslint.enable": true
+  "eslint.enable": true,
+  "[handlebars]": { "editor.formatOnSave": false }
 }

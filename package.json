@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "next",
     "build": "next build",
-    "serve": "next start"
+    "serve": "next start",
+    "generate": "plop"
   },
   "author": "alk831",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "react": "^16.13.1"
   },
   "devDependencies": {
+    "@types/jest": "^25.2.2",
     "@types/node": "^14.0.1",
     "@types/react": "^16.9.35",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
@@ -24,6 +26,8 @@
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-react": "^7.20.0",
+    "jest": "^26.0.1",
+    "plop": "^2.6.0",
     "postcss-import": "^12.0.1",
     "prettier": "^2.0.5",
     "react-dom": "^16.13.1",

@@ -34,4 +34,34 @@ module.exports = (plop) => {
       },
     ],
   });
+
+  plop.setGenerator('hook', {
+    description: 'Create hook',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'What is your hook name?',
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: './src/hooks/{{camelCase name}}.ts',
+        templateFile: './templates/hook.ts.hbs',
+      },
+      {
+        type: 'add',
+        path: './src/hooks/index.ts',
+        templateFile: './templates/re-export.ts.hbs',
+        skipIfExists: true,
+      },
+      {
+        type: 'append',
+        path: './src/hooks/index.ts',
+        pattern: '/* PLOP_INJECT_REEXPORT */',
+        template: "export * from './{{camelCase name}}';",
+      },
+    ],
+  });
 };

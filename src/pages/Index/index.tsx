@@ -12,7 +12,16 @@ export const HomePage = () => {
 
   return (
     <main className={css.container}>
-      <div>Welcome {JSON.stringify(todo)}</div>
+      <section className={css.profile}>
+        <h2>Name Surname</h2>
+        <p>Profesionall $</p>
+      </section>
+
+      <section className={css.connection_profiles}>
+        <ul className={css.profiles}>
+          <li className={css.profile}></li>
+        </ul>
+      </section>
     </main>
   );
 };

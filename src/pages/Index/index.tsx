@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import css from './index.module.css';
+import css from './index.module.scss';
 
 export const HomePage = () => {
   const [todo, setTodo] = useState<any>();

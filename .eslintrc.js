@@ -26,5 +26,7 @@ module.exports = {
   rules: {
     'linebreak-style': 0,
     'import/prefer-default-export': 0,
+    'implicit-arrow-linebreak': 0,
+    'import/no-unresolved': 1,
   },
 };

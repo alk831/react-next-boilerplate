@@ -1,20 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import css from './index.module.scss';
 
-export const HomePage = () => {
-  const [todo, setTodo] = useState<any>();
-
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/todos/13')
-      .then((response) => response.json())
-      .then(setTodo);
-  }, []);
+export const IndexPage = () => {
+  const [counter, setCounter] = useState(0);
 
   return (
     <main className={css.container}>
-      Welcome {JSON.stringify(todo)}
+      You have pressed button {counter} times
+      <button onClick={() => setCounter(c => c + 1)}>
+        Click to increment
+      </button>
     </main>
   );
 };
 
-export default HomePage;
+export default IndexPage;
